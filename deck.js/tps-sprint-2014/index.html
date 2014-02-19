@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Everything you need to know About Charms</title>
+	
+	<meta name="description" content="A jQuery library for modern HTML presentations">
+	<meta name="author" content="Caleb Troughton">
+	<meta name="viewport" content="width=1024, user-scalable=no">
+	
+	<!-- Core and extension CSS files -->
+	<link rel="stylesheet" href="../core/deck.core.css">
+	<link rel="stylesheet" href="../extensions/goto/deck.goto.css">
+	<link rel="stylesheet" href="../extensions/menu/deck.menu.css">
+	<link rel="stylesheet" href="../extensions/navigation/deck.navigation.css">
+	<link rel="stylesheet" href="../extensions/status/deck.status.css">
+	<link rel="stylesheet" href="../extensions/hash/deck.hash.css">
+	
+	<!-- Theme CSS files (menu swaps these out) -->
+	<link rel="stylesheet" id="style-theme-link" href="../themes/style/ubuntu.css">
+	<link rel="stylesheet" id="transition-theme-link" href="../themes/transition/fade.css">
+	
+	<!-- Custom CSS just for this page -->
+	<link rel="stylesheet" href="introduction.css">
+	
+	<script src="../modernizr.custom.js"></script>
+</head>
+
+<body class="deck-container">
+
+<section class="slide" id="title-slide" style="background: #ffffff;">
+<br/><br/>
+<img src="juju.png"/>
+</section>
+
+<section class="slide" id="whatisjuju">
+<h1>Everything you need to know about Juju Charms</h1>
+</section>
+
+<section class="slide" id="whatisjuju">
+<h1>... without getting too lost.</h1>
+</section>
+
+<section class="slide" id="addunit">
+	<h2>Who am I?</h2>	
+
+<img src="ubuntu.png"/>
+<br/><br/>
+		<center><h3>Jorge O. Castro &lt;jorge@ubuntu.com&gt; - @castrojo</h3></center>	
+</section>
+
+<section class="slide" id="getpaid">
+<h1>Agenda</h1>
+</section>
+
+<section class="slide" id="getpaid">
+<h1>juju.ubuntu.com/docs</h1>
+</section>
+
+<section class="slide" id="betteridea">
+<h2>Using Juju</h2>
+<li class="slide">The Local LXC Provider</li>
+<li class="slide">The Vagrant Provider</li>
+<li class="slide"> ... there are others</li>
+</section>
+
+<section class="slide" id="betteridea">
+<h2>Do I even need to write a charm from scratch?</h2>
+<li class="slide">Browse around the charm store</li>
+<li class="slide">Ping the Juju Eco team</li>
+<li class="slide">Ping Canonical IS</li>
+<li class="slide">It's probably in negronjl's +junk branch</li>
+</section>
+
+<section class="slide" id="betteridea">
+<h2>Reusing an existing charm</h2>
+<li class="slide">Fork it</li>
+<li class="slide">Make it do what you want it to do</li>
+<li class="slide">Add tests with <tt>charm add tests</tt></li>
+<li class="slide">Tell someone when you are done</li>
+</section>
+
+<section class="slide" id="betteridea">
+<h1>You are not done until the charm is fixed in the store</h1>
+</section>
+
+<section class="slide" id="betteridea">
+<h2>How to fail!</h2>
+<li class="slide">Make coworkers redo your work</li>
+<li class="slide">Don't share solutions with others</li>
+<li class="slide">Don't add a test</li>
+</section>
+
+<section class="slide" id="betteridea">
+<h1>But the charms I am finding are pretty horrible</h1>
+</section>
+
+<section class="slide" id="betteridea">
+<h2>Fixing an existing charm</h2>
+<li class="slide">The Great Charm Audit of 2k14</li>
+<li class="slide"><tt>charm add test</tt></li>
+<li class="slide"><tt>charm add readme</tt></li>
+<li class="slide"><tt>charm proof</tt></li>
+</section>
+
+<section class="slide" id="betteridea">
+<h2>Fixing an existing charm</h2>
+<li class="slide">Installation sources (remember offline!)</li>
+<li class="slide">Options, options, options</li>
+<li class="slide">Don't forget no charm is an island</li>
+</section>
+
+<section class="slide" id="betteridea">
+<h2>When to rewrite</h2>
+<li class="slide">Has anyone touched this in the last year?</li>
+<li class="slide">Are we using it internally?</li>
+<li class="slide">Does it read like a BASH intro book from 1992?</li>
+<li class="slide">... then rewrite, but sync up with us so we know</li>
+</section>
+
+<section class="slide" id="betteridea">
+<h1>If the charm looks great, submit a test anyway!</h1>
+</section>
+
+<section class="slide" id="betteridea">
+<h1>Pro tip: No charm is that good (yet)</h1>
+</section>
+
+<section class="slide" id="betteridea">
+<h2>From scratch</h2>
+<li class="slide">Docs ... first!</li>
+<li class="slide">Make a plan</li>
+<li class="slide">We make tools for you, <tt>charm create foo</tt></li>
+</section>
+
+<section class="slide" id="betteridea">
+<h2>From scratch</h2>
+<li class="slide">Find an existing charm with a similar technology stack</li>
+<li class="slide">... and steal from it</li>
+<li class="slide">Go for minimum viable charm</li>
+</section>
+
+<section class="slide" id="betteridea">
+<h2>Minimum Viable Charm</h2>
+<li class="slide">You will love <tt>charm debug-hooks</tt></li>
+<li class="slide">Add tests via amulet</li>
+<li class="slide">Pass <tt>charm proof</tt></li>
+<li class="slide">Customer needs first, but don't forget about the long run</li>
+<li class="slide">Ping a coworker for a quick review before you move on.</li>
+</section>
+
+<section class="slide" id="betteridea">
+<h2>... time passes</h2>
+<li class="slide">Submit to the charm store for proper review</li>
+<li class="slide">If a private charm, do whatever it is we do with private charms. :)</li>
+<li class="slide">Maintain over time</li>
+<li class="slide">Be realistic about your maintenance, ping us if unsure</li>
+</section>
+
+<section class="slide" id="betteridea">
+<h2>Example, the cinder charm</h2>
+<li class="slide">"Make a plan" - the upstream README covers most of this.</li>
+<li class="slide">Fork, make the appropriate modifications.</li>
+<li class="slide">Config file templates, almost as if they knew you were coming!</li>
+<li class="slide">And put it behind a config flag: <tt>juju set config blah</tt></li>
+<li class="slide">Don't forget to add the appropriate changes to the nova charm!</li>
+</section>
+
+<section class="slide" id="betteridea">
+<h2>A note on the OpenStack charms</h2>
+<li class="slide">No charm is an island, especially in OpenStack</li>
+<li class="slide">"Surely adding these changes won't affect anything"</li>
+<li class="slide">Make a plan, ping the maintainers, it will save you time</li>
+<li class="slide">Looks straightforward with Havana *smirk*</li>
+</section>
+
+<section class="slide" id="betteridea">
+<h2>... a word on maintenance</h2>
+<li class="slide">~charmers is responsible for the charm store</li>
+<li class="slide">Nobody likes abandoned charms</li>
+<li class="slide">Please don't fork and forget</li>
+<li class="slide">2 years from now the customer wants to move to a new LTS and your custom fork of MySQL rewritten in LISP, seriously?</li>
+</section>
+
+<section class="slide" id="betteridea">
+<h1>The best way to avoid maintenance is to write tests early and often!</h1>
+</section>
+
+<section class="slide" id="betteridea">
+<h2>More charm tips</h2>
+<li class="slide">Difference between good practice and policy</li>
+<li class="slide">Opinionated config, not the book</li>
+<li class="slide">Reuse customer work if possible and appropriate</li>
+<li class="slide">Share your horrible work even if it's not obvious</li>
+</section>
+
+<section class="slide" id="betteridea">
+<h2>Common problems</h2>
+<li class="slide">Depending on a network connection (payloads can help)</li>
+<li class="slide">Not following the network connection dependency chain</li>
+<li class="slide">Trying to write relationships without <tt>debug-hooks</tt></li>
+<li class="slide">Testing on only one cloud/provider</li>
+<li class="slide">Doing things the hard way instead of using charm tools or amulet.</li>
+</section>
+
+<section class="slide" id="betteridea">
+<h2>But I want more indepth training!</h2>
+<li class="slide">On the spot charm schools for you and your friends on G+</li>
+<li class="slide">juju.ubuntu.com/videos</li>
+<li class="slide">#juju on Freenode</li>
+<li class="slide">#juju on Canonical IRC for private discussion</li>
+</section>
+
+
+<section class="slide" id="betteridea">
+<h2>In Summary</h2>
+<li class="slide">Steal everything</li>
+<li class="slide">Add tests</li>
+<li class="slide">Ask somebody</li>
+<li class="slide"><tt>juju debug-hooks</tt></li>
+</section>
+
+
+<section class="slide" id="thanks">
+<h2>Thanks!</h2>
+<li>juju.ubuntu.com</li>
+<li>jujucharms.com</li>
+<li>launchpad.net/juju</li>
+<li>#juju on Freenode</li>
+<br/><br/><br/>
+<h3>Jorge Castro &lt;jorge.castro@canonical.com&gt; - @castrojo</h3></section>
+
+  <!-- Grab CDN jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../jquery-1.7.min.js"><\/script>')</script>
+
+<!-- Deck Core and extensions -->
+<script src="../core/deck.core.js"></script>
+<script src="../extensions/hash/deck.hash.js"></script>
+<script src="../extensions/menu/deck.menu.js"></script>
+<script src="../extensions/goto/deck.goto.js"></script>
+<script src="../extensions/status/deck.status.js"></script>
+<script src="../extensions/navigation/deck.navigation.js"></script>
+
+<!-- Specific to this page -->
+<script src="introduction.js"></script>
+
+</body>
+</html>

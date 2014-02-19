@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>Random Ubuntu Tips and Tricks</title>
+	
+	<meta name="description" content="A jQuery library for modern HTML presentations">
+	<meta name="author" content="Caleb Troughton">
+	<meta name="viewport" content="width=1024, user-scalable=no">
+	
+	<!-- Core and extension CSS files -->
+	<link rel="stylesheet" href="../core/deck.core.css">
+	<link rel="stylesheet" href="../extensions/goto/deck.goto.css">
+	<link rel="stylesheet" href="../extensions/menu/deck.menu.css">
+	<link rel="stylesheet" href="../extensions/navigation/deck.navigation.css">
+	<link rel="stylesheet" href="../extensions/status/deck.status.css">
+	<link rel="stylesheet" href="../extensions/hash/deck.hash.css">
+	
+	<!-- Theme CSS files (menu swaps these out) -->
+	<link rel="stylesheet" id="style-theme-link" href="../themes/style/ubuntu.css">
+	<link rel="stylesheet" id="transition-theme-link" href="../themes/transition/fade.css">
+	
+	<!-- Custom CSS just for this page -->
+	<link rel="stylesheet" href="introduction.css">
+	
+	<script src="../modernizr.custom.js"></script>
+</head>
+
+<body class="deck-container">
+
+<section class="slide" id="whatisjuju">
+<h1>Random Ubuntu Tips and Tricks</h1>
+</section>
+
+<section class="slide" id="whatisjuju">
+<h1>aka. "Yay UNIX!"</h1>
+</section>
+
+<section class="slide" id="addunit">
+	<h2>Who are you?</h2>	
+
+<img src="ubuntu.png"/>
+<br/><br/>
+<center><h3>Jorge O. Castro &lt;jorge@ubuntu.com&gt; - @castrojo</h3></center>	
+</section>
+
+<section class="slide" id="scaleit">
+<h1>One Rule: Yell something out if it's useful!</h1>
+</section>
+
+<section class="slide" id="start">
+<h2>Ok, let's get started.</h2>
+<pre>man hier</pre>
+<h2>This explains the filesystem (sort of).</h2>
+</section>
+
+<section class="slide" id="vim">
+<h2>There is no escape</h2>
+<pre>sudo apt-get install vim</pre>
+<pre>vimtutor</pre>
+<h2>Three times a day for a week, then be brave:</h2>
+<pre>sudo apt-get remove nano</pre>
+</section>
+
+<section class="slide" id="vim">
+<h1>Using Unity Lenses</h1>
+</section>
+
+<section class="slide" id="vim">
+<h2>Don't judge me by my text editor</h2>
+<pre>edit file_name
+sudoedit file_name</pre>
+</section>
+
+<section class="slide" id="vim">
+<h2>Where did this file come from?</h2>
+<pre>sudo apt-file update
+apt-file search file_name</pre>
+</section>
+
+<section class="slide" id="vim">
+<h1>Middle click on the Window!</h1>
+</section>
+
+<section class="slide" id="vim">
+<h2>Stuck in text mode, broken X!</h2>
+<pre>cat somelog.log > pastebinit
+jockey-text
+elinks askubuntu.com
+</pre>
+<h2>Nvidia and ATI users, remember <tt>jockey-text</tt>!</h2>
+</section>
+
+<section class="slide" id="etckeeper">
+<h2>Version control yourself!</h2>
+<pre>etckeeper</pre>
+<h2>Dotfiles in git. But not your ssh key!</h2>
+</section>
+
+<section class="slide" id="etckeeper">
+<h2>I suck at UUIDs</h2>
+<pre>sudo blkid -p /dev/sda1</pre>
+</section>
+
+<section class="slide" id="etckeeper">
+<h2>Copying ssh keys by hand? Pfft.</h2>
+<pre>ssh-import-id lp:jorge
+ssh-import-id github:castrojo</pre>
+</section>
+
+<section class="slide" id="sudo">
+<h2>$%^& sudo!</h2>
+<pre>apt-get update</pre>
+<h2>NO!</h2>
+<pre>sudo !!</pre>
+<h2>Okay, I will make you that sandwich</h2>
+</section>
+
+<section class="slide" id="sudo2">
+<h1>How to use Unity Like a Boss</h1>
+</section>
+
+<section class="slide" id="sudo2">
+<h2>Ok last sudo one...</h2>
+<pre>sudo su</pre>
+<h2>Don't do that, do this</h2>
+<pre>sudo -s</pre>
+<pre>sudo -i</pre>
+</section>
+
+<section class="slide" id="out">
+<h2>Out with the old</h2>
+<ul>
+<li><tt>screen</tt> -> <tt>tmux</tt> (Use byobu with both!)</li>
+<li><tt>top</tt> -> <tt>htop</tt></li>
+<li>
+</section>
+
+<section class="slide" id="more">
+<h2>More cool stuff</h2>
+<pre>tail -F somefile.log | ccze</pre>
+<pre>molly-guard</pre>
+<pre>powertop</pre>
+<pre>aptcond</pre>
+
+</section>
+
+<section class="slide" id="hardware1">
+<h2>Jorge's Hardware Buying Guide</h2>
+<ul>
+<li>Intel Video for laptops</li>
+<li>Intel Wireless</li>
+<li>NVidia GTXes for Gaming</li>
+<li>HP Printers</li>
+</ul>
+</section>
+
+<section class="slide" id="hardware2">
+<h2>Jorge's Hardware Buying Guide</h2>
+<ul>
+<li>You want inkernel drivers, something that Just Works</li>
+<li>"All I had to do was download stuff from the vendor" <-- NO</li>
+<li>Pandawireless.com for the win</li>
+<li>See what the experts are using!</li>
+</ul>
+</section>
+
+<section class="slide" id="hardware3">
+<h2>Jorge's Hardware Avoidance Guide</h2>
+<ul>
+<li>Any Broadcom Wireless</li>
+<li>Any NVidia Optimus-based laptop</li>
+<li>Any ATI video card</li>
+<li>Older ATI cards supported by free drivers are okay</li>
+<li>Anything with "Paperweight" designation on linuxprinting.org</li>
+</ul>
+</section>
+
+
+<section class="slide" id="uhoh">
+<h1>Support hardware vendors that do it right!</h1>
+</section>
+
+<section class="slide" id="uhoh">
+<h1>What not to do!</h1>
+</section>
+
+<section class="slide" id="tweaks">
+<h1>Top Ten Tweaks for Ubuntu 14.04!</h1>
+</section>
+
+<section class="slide" id="break">
+<h1>aka. How to break your computer!</h1>
+</section>
+
+<section class="slide" id="guidelines">
+<h2>Common Guidelines</h2>
+<ul>
+<li>You're not <em>supposed</em> to be stomping all over the disk!</li>
+<li>Prefer dotfiles to messing with <tt>/etc</tt></li>
+<li>Read the warnings (I know right)</li>
+</section>
+
+<section class="slide" id="dotfiles">
+<h2>Dotfiles can also get you into trouble</h2>
+<ul>
+<li>.gconf - "Human Readable" XML</li>
+<li>Easy to backup, so do it</li>
+<li>You can generally recover from messing up in your home directory</li>
+<li>Suspect something? Switch users and try it</li>
+</ul>
+</section>
+
+<section class="slide" id="sudo2">
+<h2>Things to never tweak unless you know what you are doing</h2>
+<ul>
+<li>Plumbing - kernel, Xorg, init, grub</li>
+<li>Power - you are dumber than the kernel</li>
+<li>If it was an amazing tweak our kernel team would have shipped it. :)</li>
+</ul>
+</section>
+
+<section class="slide" id="ppa">
+<h2>PPA Guidelines</h2>
+<ul>
+<li>Do you trust that person on the internet?</li>
+<li>Even if you do do you trust their commitment to that PPA?</li>
+<li>Work towards not needing PPAs, either via backports or upgrades</li>
+<li>Granular PPAs > one huge pile</li>
+</ul>
+</section>
+
+<section class="slide" id="ppa2">
+<h2>PPA Guidelines cont.</h2>
+<ul>
+<li>We disable PPAs on upgrade, do an audit</li>
+<li>Try to avoid "plumbing" PPAs if you are not an expert</li>
+<li>The Hardware Enablement Stack can really help you here</li>
+<li>Consider PPAing, and then removing it</li>
+</ul>
+</section>
+
+<section class="slide" id="sudo2">
+<h2>The Hardware Enablement Stack</h2>
+<ul>
+<li>Comes with the LTS point releases.</li>
+<pre>sudo apt-get install linux-generic-lts-saucy linux-headers-generic-lts-saucy xserver-xorg-lts-saucy</pre>
+<li>Gets you to the next LTS, great for new hardware</li>
+</ul>
+</section>
+
+<section class="slide" id="demo">
+<h1>Come to my Juju talk tomorrow, it's way better than this talk!</h1>
+</section>
+
+<section class="slide" id="thanks">
+<h2>Thanks! Any Questions?</h2>
+<br/><br/>
+<h3>Jorge Castro &lt;jorge@ubuntu.com&gt;</h3> 
+<h3>www.jorgecastro.org</h3>
+<h3>Steam: jcastro1975</h3>
+</section>
+
+  <!-- Grab CDN jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../jquery-1.7.min.js"><\/script>')</script>
+
+<!-- Deck Core and extensions -->
+<script src="../core/deck.core.js"></script>
+<script src="../extensions/hash/deck.hash.js"></script>
+<script src="../extensions/menu/deck.menu.js"></script>
+<script src="../extensions/goto/deck.goto.js"></script>
+<script src="../extensions/status/deck.status.js"></script>
+<script src="../extensions/navigation/deck.navigation.js"></script>
+
+<!-- Specific to this page -->
+<script src="introduction.js"></script>
+
+</body>
+</html>
